@@ -1,0 +1,46 @@
+{
+  "name": "@plugfigure/vault",
+  "version": "0.0.1",
+  "description": "Pluggable configuration loader",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepare": "babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plugfigure/plugfigure-vault.git"
+  },
+  "keywords": [
+    "configuration",
+    "config",
+    "yaml"
+  ],
+  "author": "Ben Turner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/plugfigure/plugfigure-vault/issues"
+  },
+  "homepage": "https://github.com/plugfigure/plugfigure-vault#readme",
+  "peerDependencies": {
+    "@plugfigure/core": "^0.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4"
+  },
+  "dependencies": {
+    "node-vault-client": "^0.5.6"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "10"
+          }
+        }
+      ]
+    ]
+  }
+}
